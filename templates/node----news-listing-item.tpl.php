@@ -18,7 +18,7 @@ endif;
     <p class="campl-listing-title"><a href="<?php print $url; ?>"><?php print $title; ?></a></p>
     <?php print render($title_suffix); ?>
 
-    <span class="campl-datestamp"><?php print $date; ?></span>
+    <p class="campl-datestamp"><?php print $date; ?></p>
 
     <?php print render($content); ?>
 
