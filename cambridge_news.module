@@ -11,7 +11,7 @@ function cambridge_news_entity_info_alter(&$entity_info) {
   $entity_info['node']['view modes'] += array(
     'news_listing_item' => array(
       'label' => t('News listing item'),
-      'custom settings' => FALSE,
+      'custom settings' => TRUE,
     ),
   );
 }
