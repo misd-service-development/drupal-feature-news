@@ -1,39 +1,7 @@
 <?php
 /**
  * @file
- * Code for the News feature.
+ * Code for the Cambridge News feature.
  */
 
-/**
- * Implements hook_entity_info_alter().
- */
-function cambridge_news_entity_info_alter(&$entity_info) {
-  $entity_info['node']['view modes'] += array(
-    'news_listing_item' => array(
-      'label' => t('News listing item'),
-      'custom settings' => TRUE,
-    ),
-  );
-}
-
-/**
- * Implements hook_theme_registry_alter().
- */
-function cambridge_news_theme_registry_alter(&$theme_registry) {
-  $theme_registry['node____news_listing_item'] = array(
-    'template' => drupal_get_path('module', 'cambridge_news') . '/templates/node----news-listing-item',
-    'type' => 'module',
-  );
-}
-
-/**
- * Implements template_preprocess_node().
- */
-function cambridge_news_preprocess_node(&$vars) {
-  if ($vars['view_mode'] === 'news_listing_item') {
-    $vars['theme_hook_suggestions'][] = 'node__' . $vars['type'] . '__' . $vars['view_mode'];
-    $vars['theme_hook_suggestions'][] = 'node__' . $vars['nid'] . '__' . $vars['view_mode'];
-    $vars['theme_hook_suggestions'][] = 'node____' . $vars['view_mode'];
-    $vars['date'] = format_date($vars['node']->created, 'custom', 'j F Y');
-  }
-}
+include_once 'cambridge_news.features.inc';
