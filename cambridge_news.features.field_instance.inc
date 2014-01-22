@@ -95,9 +95,13 @@ function cambridge_news_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'carousel_item' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => 'content',
+          'image_style' => 'carousel',
+        ),
+        'type' => 'image',
         'weight' => 0,
       ),
       'default' => array(
