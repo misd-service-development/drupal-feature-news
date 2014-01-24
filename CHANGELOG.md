@@ -1,6 +1,13 @@
 Changelog
 =========
 
+7.x-2.0
+-----
+
+24 January 2014.
+
+* Changed to provide a content type and views.
+
 7.x-1.0
 -------
 
