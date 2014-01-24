@@ -19,7 +19,7 @@ function cambridge_news_node_info() {
     'news_article' => array(
       'name' => t('News Article'),
       'base' => 'node_content',
-      'description' => t('Use this content type for posting simple news updates.'),
+      'description' => t('Use <em>news article</em> to add news to your site.'),
       'has_title' => '1',
       'title_label' => t('Article title'),
       'help' => '',
