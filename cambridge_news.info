@@ -10,6 +10,7 @@ dependencies[] = cambridge_related_links
 dependencies[] = cambridge_teasers
 dependencies[] = fe_block
 dependencies[] = media
+dependencies[] = smart_trim
 dependencies[] = text
 dependencies[] = views
 features[ctools][] = views:views_default:3.0
