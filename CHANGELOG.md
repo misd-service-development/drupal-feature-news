@@ -1,6 +1,13 @@
 Changelog
 =========
 
+7.x-2.2
+-------
+
+11 May 2015.
+
+* Match Link module change.
+
 7.x-2.1
 -------
 
